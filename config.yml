@@ -1,0 +1,17 @@
+title: My First Testing Course Playground
+tagline: A brand new course on Learning Lab
+description: This is a test to understand how this could work
+template:
+  repo: my-first-testing-course-playground-template
+  name: my-first-testing-course-playground
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
